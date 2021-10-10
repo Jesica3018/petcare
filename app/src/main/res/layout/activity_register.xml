@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Daftar Akun"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/daftarEmail"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:drawableEnd="@drawable/ic_email_24"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/daftarPhone"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:drawableEnd="@drawable/ic_call_24"
+        android:ems="10"
+        android:hint="No.Telpon"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/daftarEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/daftarEmail"
+        app:layout_constraintTop_toBottomOf="@+id/daftarEmail" />
+
+    <EditText
+        android:id="@+id/daftarAlamat"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:drawableEnd="@drawable/ic_house_24"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/daftarPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/daftarPhone"
+        app:layout_constraintTop_toBottomOf="@+id/daftarPhone" />
+
+    <EditText
+        android:id="@+id/daftarPassword"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:drawableEnd="@drawable/ic_lock_24"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/daftarAlamat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/daftarAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/daftarAlamat" />
+
+    <Button
+        android:id="@+id/buttonDaftar"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="#A35D47"
+        android:text="Daftar"
+        app:layout_constraintEnd_toEndOf="@+id/daftarPassword"
+        app:layout_constraintStart_toStartOf="@+id/daftarPassword"
+        app:layout_constraintTop_toBottomOf="@+id/daftarPassword" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="silahkan lengkapi data di bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
